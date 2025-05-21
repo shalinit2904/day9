@@ -1,0 +1,19 @@
+#include<stdio.h>
+void numbers(int x)
+{
+    if(x==0) return;
+    printf("%d ",x);
+    numbers(x-1);
+}
+void numbersdese(int x)
+{
+    if(x==0) return;
+    printf("%d ",x);
+    numbersdese(x-1);
+}
+
+int main(){
+    numbers(10);
+    printf("\n");
+    numbersdese(10);
+}
